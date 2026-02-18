@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="194x194" href="/favicon.webp">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon.webp">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.webp">
-    <meta name="author" content="DuckMath">
+    <meta name="author" content="QuackPrep">
     <meta name="publisher" content="Sarkar Games">
     <meta name="robots" content="noindex, nofollow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,19 +27,19 @@
     <link rel="stylesheet" href="/css/footer.css?v=2024061001">
     <style>
         /* Icon Customizer Styles */
-        .n276 {
+        .preset-icon-option {
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
         }
 
-        .n276:hover {
+        .preset-icon-option:hover {
             transform: translateY(-4px) scale(1.05);
             border-color: rgba(255, 255, 255, 0.8) !important;
             background: rgba(0, 0, 0, 0.3) !important;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        .n276.selected {
+        .preset-icon-option.selected {
             border-color: #10B981 !important;
             background: rgba(16, 185, 129, 0.2) !important;
             box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
@@ -76,7 +76,7 @@
         }
 
         @media (max-width: 768px) {
-            .n277 {
+            .preset-icons-grid {
                 grid-template-columns: 1fr !important;
             }
 
@@ -84,7 +84,7 @@
                 width: 100%;
             }
         }
-        .n384 {
+        .top-banner {
     position: fixed;
     top: 0;
     left: 50%;
@@ -105,7 +105,7 @@
     z-index: 1000
 }
 
-.n385 {
+.top-banner-brand {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -115,56 +115,47 @@
     transition: opacity .2s ease
 }
 
-.n385:hover {
+.top-banner-brand:hover {
     opacity: .9
 }
 
-.n385 img {
+.top-banner-brand img {
     width: 3.5rem;
     margin-right: .5em
 }
 
-.n173 {
+.hover-spin {
     transition: transform .2s ease-in-out
 }
 
-.n173:hover {
+.hover-spin:hover {
     transform: rotate(360deg)
 }
 
 @media(max-width: 768px) {
-    .n384 {
+    .top-banner {
         height:48px;
         padding: .25rem 1rem
     }
 
-    .n385 {
+    .top-banner-brand {
         font-size: 1.2em
     }
 
-    .n385 img {
+    .top-banner-brand img {
         width: 2.5rem
     }
 }
 
     </style>
-   <title>DuckMath Settings — Customize Favicon & Tab Title</title> <meta name="description" content="Personalize DuckMath: choose or upload a favicon (or clear it) and set a custom browser tab title. Settings persist across the site for a tailored browsing experience.">
-    <link rel="canonical" href="https://duckmath.fun/settings" />
+   <title>Quackprep Settings — Customize Favicon & Tab Title</title> <meta name="description" content="Personalize Quackprep: choose or upload a favicon (or clear it) and set a custom browser tab title. Settings persist across the site for a tailored browsing experience.">
+    <link rel="canonical" href="https://Quackprep.pro/settings" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HSTHCSNXTK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HSTHCSNXTK');
-</script>
 </head>
 
 <body aria-hidden="false" style="padding: 0px;">
     <div id="root">
-       <div style="padding: 1rem 1rem 0px;" bis_skin_checked="1"><div class="n384" bis_skin_checked="1"><a href="/" style="color: rgb(0, 0, 0);"><div class="n385" bis_skin_checked="1"><img src="/images/assest/duck-img-logo.webp" alt="logo" class="n173">Duckmath.fun</div></a></div>
+       <div style="padding: 1rem 1rem 0px;" bis_skin_checked="1"><div class="top-banner" bis_skin_checked="1"><a href="/" style="color: rgb(0, 0, 0);"><div class="top-banner-brand" bis_skin_checked="1"><img src="/images/assest/duck-img-logo.webp" alt="logo" class="hover-spin">Quackprep.pro</div></a></div>
 
             <!-- Icon & Title Customizer Section -->
             <div style="margin: 2rem 0; padding: 0px;">
@@ -182,29 +173,29 @@
                         <!-- Preset Icons -->
                         <div style="margin-bottom: 1.5rem;">
                             <p style="margin: 0 0 0.8rem 0; font-size: 0.95rem; font-weight: 600;">Quick Select:</p>
-                            <div class="n277"
+                            <div class="preset-icons-grid"
                                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-                                <div class="n276" data-icon-url="/favicon.webp"
+                                <div class="preset-icon-option" data-icon-url="/favicon.webp"
                                     style="cursor: pointer; padding: 1.5rem; border: 3px solid rgba(255,255,255,0.4); border-radius: 12px; text-align: center; transition: all 0.3s ease; background: rgba(0,0,0,0.2);">
                                     <img src="/favicon.webp" alt="Preset Icon 1"
                                         style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 0.75rem; display: block; margin-left: auto; margin-right: auto;">
                                     <span style="font-size: 0.9rem; font-weight: 600; display: block;">Duck Logo</span>
                                 </div>
-                                <div class="n276"
+                                <div class="preset-icon-option"
                                     data-icon-url="/images/assest/classroom.jfif"
                                     style="cursor: pointer; padding: 1.5rem; border: 3px solid rgba(255,255,255,0.4); border-radius: 12px; text-align: center; transition: all 0.3s ease; background: rgba(0,0,0,0.2);">
                                     <img src="/images/assest/classroom.jfif" alt="Preset Icon 2"
                                         style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 0.75rem; display: block; margin-left: auto; margin-right: auto;">
                                     <span style="font-size: 0.9rem; font-weight: 600; display: block;">Class Room</span>
                                 </div>
-                                <div class="n276"
+                                <div class="preset-icon-option"
                                     data-icon-url="/images/assest/googlesheet.ico"
                                     style="cursor: pointer; padding: 1.5rem; border: 3px solid rgba(255,255,255,0.4); border-radius: 12px; text-align: center; transition: all 0.3s ease; background: rgba(0,0,0,0.2);">
                                     <img src="/images/assest/googlesheet.ico" alt="Preset Icon 3"
                                         style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 0.75rem; display: block; margin-left: auto; margin-right: auto;">
                                     <span style="font-size: 0.9rem; font-weight: 600; display: block;">Google Sheet</span>
                                 </div>
-                                <div class="n276" data-icon-url="blank"
+                                <div class="preset-icon-option" data-icon-url="blank"
                                     style="cursor: pointer; padding: 1.5rem; border: 3px solid rgba(255,255,255,0.4); border-radius: 12px; text-align: center; transition: all 0.3s ease; background: rgba(0,0,0,0.2);">
                                     <div style="width: 70px; height: 70px; border-radius: 10px; margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); margin-left: auto; margin-right: auto; font-size: 2rem;">-</div>
                                     <span style="font-size: 0.9rem; font-weight: 600; display: block;">Clear/Blank</span>
@@ -257,83 +248,83 @@
                 </div>
             </div>
         </div>
-        <footer class="n125">
-            <div class="n142">
-                <div class="n143">
-                    <div class="n148 n141">
-                        <div class="n419"><a href="/" data-discover="true"><img src="/favicon.webp"
-                                    alt="DuckMath" class="n147"></a>
-                            <div class="n422"><a href="/" data-discover="true">
-                                    <h2 class="n423">Duckmath</h2>
+        <footer class="ducky-footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section footer-brand-section">
+                        <div class="brand-header"><a href="/" data-discover="true"><img src="/favicon.webp"
+                                    alt="Quackprep" class="footer-logo"></a>
+                            <div class="brand-text"><a href="/" data-discover="true">
+                                    <h2 class="brand-title">Quackprep</h2>
                                 </a>
-                                <p class="n420">Play Free Unblocked Games Online</p>
+                                <p class="brand-subtitle">Play Free Unblocked Games Online</p>
                             </div>
                         </div>
-                        <p class="n418">Enjoy and play 400+ online browser games on Duckmath.fun, updated
+                        <p class="brand-description">Enjoy and play 400+ online browser games on Quackprep.pro, updated
                             every day, where you can earn rewards, compete on leaderboards, and enjoy smooth
                             performance&mdash;even on a school &amp; office, Chromebook.</p>
                     </div>
-                    <div class="n148">
-                        <h4 class="n337">Pages</h4>
-                        <ul class="n145">
-                            <li><a href="/" data-discover="true"><span class="n213">🏠</span> Home</a></li>
-                            <li><a href="/about" data-discover="true"><span class="n213">ℹ️</span> About</a>
+                    <div class="footer-section">
+                        <h4 class="section-title">Pages</h4>
+                        <ul class="footer-links">
+                            <li><a href="/" data-discover="true"><span class="link-icon">🏠</span> Home</a></li>
+                            <li><a href="/about" data-discover="true"><span class="link-icon">ℹ️</span> About</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="n148">
-                        <h4 class="n337">Features</h4>
-                        <ul class="n145">
-                            <li><a href="/leaderboard" data-discover="true"><span class="n213">🏆</span>
+                    <div class="footer-section">
+                        <h4 class="section-title">Features</h4>
+                        <ul class="footer-links">
+                            <li><a href="/leaderboard" data-discover="true"><span class="link-icon">🏆</span>
                                     Leaderboard</a></li>
-                            <li><a href="/streak" data-discover="true"><span class="n213">🔥</span> Streak</a>
+                            <li><a href="/streak" data-discover="true"><span class="link-icon">🔥</span> Streak</a>
                             </li>
-                            <li><a href="/profile" data-discover="true"><span class="n213">👤</span>
+                            <li><a href="/profile" data-discover="true"><span class="link-icon">👤</span>
                                     Profile</a></li>
-                            <li><a href="/settings" data-discover="true"><span class="n213">⚙️</span>
+                            <li><a href="/settings" data-discover="true"><span class="link-icon">⚙️</span>
                                     Settings</a></li>
-                            <li><a href="/upload" data-discover="true"><span class="n213">📤</span> Upload</a>
+                            <li><a href="/upload" data-discover="true"><span class="link-icon">📤</span> Upload</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="n148">
-                        <h4 class="n337">Support</h4>
-                        <ul class="n145">
-                            <li><a href="mailto:sarkargames.info@gmail.com"><span class="n213">📧</span> Contact
+                    <div class="footer-section">
+                        <h4 class="section-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="mailto:sarkargames.info@gmail.com"><span class="link-icon">📧</span> Contact
                                     Us</a></li>
                             <li><a href="/join-chad.html" target="_blank" rel="noopener noreferrer"><span
-                                        class="n213">💬</span> The Duck Pond</a></li>
-                            <li><a href="/links" data-discover="true"><span class="n213">🔗</span> Links</a>
+                                        class="link-icon">💬</span> The Duck Pond</a></li>
+                            <li><a href="/links" data-discover="true"><span class="link-icon">🔗</span> Links</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="n148">
-                        <h4 class="n337">Legal</h4>
-                        <ul class="n145">
-                            <li><a href="/terms" data-discover="true"><span class="n213">📜</span> Terms of
+                    <div class="footer-section">
+                        <h4 class="section-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="/terms" data-discover="true"><span class="link-icon">📜</span> Terms of
                                     Service</a></li>
-                            <li><a href="/privacy" data-discover="true"><span class="n213">🔒</span> Privacy
+                            <li><a href="/privacy" data-discover="true"><span class="link-icon">🔒</span> Privacy
                                     Policy</a></li>
-                            <li><a href="/takedown" data-discover="true"><span class="n213">⚖️</span> DMCA
+                            <li><a href="/takedown" data-discover="true"><span class="link-icon">⚖️</span> DMCA
                                     Takedown</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="n139">
-                    <div class="n144"></div>
-                    <div class="n140">
-                        <p class="n459">© 2026 Duckmath.Fun. All rights reserved.</p>
-                        <p class="n278"></p><a href="mailto:sarkargames.info@gmail.com"
-                            class="n457">sarkargames.info@gmail.com</a>
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="footer-bottom-content">
+                        <p class="copyright">© 2026 Quackprep.pro. All rights reserved.</p>
+                        <p class="production-credit"></p><a href="mailto:sarkargames.info@gmail.com"
+                            class="contact-email">sarkargames.info@gmail.com</a>
                     </div>
                 </div>
             </div>
-            <div class="n464 n461"></div>
-            <div class="n464 n462"></div>
-            <div class="n464 n463"></div>
+            <div class="crystal-decoration crystal-1"></div>
+            <div class="crystal-decoration crystal-2"></div>
+            <div class="crystal-decoration crystal-3"></div>
         </footer>
     </div>
-    <section class="n124" aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+    <section class="Toastify" aria-live="polite" aria-atomic="false" aria-relevant="additions text"
         aria-label="Notifications Alt+T"></section>
     </div>
     <script src="/search-system.js"></script>
@@ -344,8 +335,8 @@
     <script>
         // Site Customizer (Icon & Title)
         (function () {
-            const ICON_STORAGE_KEY = 'duckmath_custom_icon';
-            const TITLE_STORAGE_KEY = 'duckmath_custom_title';
+            const ICON_STORAGE_KEY = 'Quackprep_custom_icon';
+            const TITLE_STORAGE_KEY = 'Quackprep_custom_title';
             
             let currentIconUrl = localStorage.getItem(ICON_STORAGE_KEY) || '/favicon.webp';
             let currentTitle = localStorage.getItem(TITLE_STORAGE_KEY) || '';
@@ -370,7 +361,7 @@
             applyCustomizations(currentIconUrl, currentTitle);
 
             // Preset icon options
-            const presetOptions = document.querySelectorAll('.n276');
+            const presetOptions = document.querySelectorAll('.preset-icon-option');
             presetOptions.forEach(option => {
                 option.addEventListener('click', function () {
                     const iconUrl = this.getAttribute('data-icon-url');

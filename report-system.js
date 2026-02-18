@@ -1,5 +1,5 @@
 /**
- * Duckmath Game Report System
+ * Quackprep Game Report System
  * Add this to any game page with minimal code
  * 
  * All you need in your HTML:
@@ -27,22 +27,22 @@
             border: none;
         }
 
-        .n290 {
+        .action-button {
             transition: all 0.3s ease;
             position: relative;
         }
 
-        .n290:hover {
+        .action-button:hover {
             transform: scale(1.1);
         }
 
-        .n290.active {
+        .action-button.active {
             color: #0004ff;
             transform: scale(1.15);
             animation: pulse 0.5s ease;
         }
 
-        .n290.active span {
+        .action-button.active span {
             font-weight: bold;
         }
 
@@ -63,7 +63,7 @@
             }
         }
 
-        .n300 {
+        .report-modal {
             display: none;
             position: fixed;
             z-index: 10000;
@@ -74,14 +74,14 @@
             background-color: rgba(0, 0, 0, 0.6);
         }
 
-        .n300.show {
+        .report-modal.show {
             display: flex;
             justify-content: center;
             align-items: center;
             animation: fadeIn 0.3s ease;
         }
 
-        .n302 {
+        .report-modal-content {
             background-color: white;
             padding: 40px;
             border-radius: 15px;
@@ -93,7 +93,7 @@
             overflow-y: auto;
         }
 
-        .n304 {
+        .report-modal-header {
             font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
@@ -102,11 +102,11 @@
             padding-bottom: 15px;
         }
 
-        .n299 {
+        .report-form-group {
             margin-bottom: 20px;
         }
 
-        .n299 label {
+        .report-form-group label {
             display: block;
             margin-bottom: 10px;
             font-weight: 600;
@@ -114,9 +114,9 @@
             font-size: 15px;
         }
 
-        .n299 input,
-        .n299 select,
-        .n299 textarea {
+        .report-form-group input,
+        .report-form-group select,
+        .report-form-group textarea {
             width: 100%;
             padding: 12px;
             border: 2px solid #ddd;
@@ -127,20 +127,20 @@
             transition: border-color 0.3s ease;
         }
 
-        .n299 input:focus,
-        .n299 select:focus,
-        .n299 textarea:focus {
+        .report-form-group input:focus,
+        .report-form-group select:focus,
+        .report-form-group textarea:focus {
             outline: none;
             border-color: #ff6b6b;
             box-shadow: 0 0 8px rgba(255, 107, 107, 0.3);
         }
 
-        .n299 textarea {
+        .report-form-group textarea {
             resize: vertical;
             min-height: 120px;
         }
 
-        .n303 {
+        .report-modal-footer {
             display: flex;
             gap: 15px;
             justify-content: flex-end;
@@ -149,7 +149,7 @@
             border-top: 2px solid #eee;
         }
 
-        .n429 {
+        .btn {
             padding: 12px 25px;
             border: none;
             border-radius: 8px;
@@ -159,27 +159,27 @@
             transition: all 0.3s ease;
         }
 
-        .n430 {
+        .btn-primary {
             background-color: #ff6b6b;
             color: white;
         }
 
-        .n430:hover {
+        .btn-primary:hover {
             background-color: #ff5252;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
         }
 
-        .n431 {
+        .btn-secondary {
             background-color: #e0e0e0;
             color: #333;
         }
 
-        .n431:hover {
+        .btn-secondary:hover {
             background-color: #d0d0d0;
         }
 
-        .n375 {
+        .success-message {
             display: none;
             color: #28a745;
             font-weight: bold;
@@ -192,7 +192,7 @@
             animation: slideUp 0.4s ease;
         }
 
-        .n375.show {
+        .success-message.show {
             display: block;
         }
 
@@ -205,20 +205,20 @@
 
     // Inject HTML Modal
     const modalHTML = `
-        <div id="reportModal" class="n300">
-            <div class="n302">
-                <div class="n375" id="successMessage">
+        <div id="reportModal" class="report-modal">
+            <div class="report-modal-content">
+                <div class="success-message" id="successMessage">
                     ✓ Report submitted successfully! Thank you for your feedback.
                 </div>
                 <form id="reportForm" style="display: block;">
-                    <div class="n304">Report Game Issue</div>
+                    <div class="report-modal-header">Report Game Issue</div>
                     
-                    <div class="n299">
+                    <div class="report-form-group">
                         <label for="reportEmail">Your Email:</label>
                         <input type="email" id="reportEmail" placeholder="your.email@example.com" required>
                     </div>
 
-                    <div class="n299">
+                    <div class="report-form-group">
                         <label for="reportCategory">Issue Category:</label>
                         <select id="reportCategory" required>
                             <option value="">-- Select Category --</option>
@@ -233,19 +233,19 @@
                         </select>
                     </div>
 
-                    <div class="n299">
+                    <div class="report-form-group">
                         <label for="reportBrowser">Browser:</label>
                         <input type="text" id="reportBrowser" placeholder="e.g., Chrome, Firefox, Safari" required>
                     </div>
 
-                    <div class="n299">
+                    <div class="report-form-group">
                         <label for="reportDescription">Detailed Description:</label>
                         <textarea id="reportDescription" placeholder="Please describe the issue in detail. What were you doing when the problem occurred?" required></textarea>
                     </div>
 
-                    <div class="n303">
-                        <button type="button" class="n429 n431" onclick="window.reportSystem.closeModal()">Cancel</button>
-                        <button type="button" class="n429 n430" onclick="window.reportSystem.submitReport()">Submit Report</button>
+                    <div class="report-modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="window.reportSystem.closeModal()">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="window.reportSystem.submitReport()">Submit Report</button>
                     </div>
                 </form>
             </div>
@@ -264,15 +264,15 @@
             const form = document.getElementById('reportForm');
             const successMsg = document.getElementById('successMessage');
             
-            modal.classList.add('n338');
+            modal.classList.add('show');
             form.style.display = 'block';
-            successMsg.classList.remove('n338');
+            successMsg.classList.remove('show');
             document.body.style.overflow = 'hidden';
         },
 
         closeModal: function() {
             const modal = document.getElementById('reportModal');
-            modal.classList.remove('n338');
+            modal.classList.remove('show');
             document.body.style.overflow = 'auto';
             document.getElementById('reportForm').reset();
         },
@@ -336,7 +336,7 @@
             const successMsg = document.getElementById('successMessage');
             
             form.style.display = 'none';
-            successMsg.classList.add('n338');
+            successMsg.classList.add('show');
             
             setTimeout(() => {
                 window.reportSystem.closeModal();

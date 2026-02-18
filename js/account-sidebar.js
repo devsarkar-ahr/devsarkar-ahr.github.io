@@ -40,8 +40,8 @@
     }
   ];
 
-  const accountBtn = document.querySelector('.n271');
-  const searchBtn = document.querySelector('.n273, [data-testid="search-icon-button"]');
+  const accountBtn = document.querySelector('.pill-section--account');
+  const searchBtn = document.querySelector('.pill-section--search, [data-testid="search-icon-button"]');
   const sidebar = document.querySelector('[data-testid="left-sidebar"]');
 
   if (!accountBtn || !sidebar) {
@@ -49,10 +49,10 @@
     return;
   }
 
-  const sidebarTitle = sidebar.querySelector('.n344');
-  const sidebarContent = sidebar.querySelector('.n342');
+  const sidebarTitle = sidebar.querySelector('.sidebar-title');
+  const sidebarContent = sidebar.querySelector('.sidebar-content');
   const searchSidebar = sidebar.querySelector('[data-testid="search-sidebar"]');
-  const backBtn = sidebar.querySelector('.n340');
+  const backBtn = sidebar.querySelector('.sidebar-back-button');
 
   if (!sidebarTitle || !sidebarContent || !searchSidebar) {
     console.warn('Account sidebar: Sidebar structure not found');
@@ -64,16 +64,16 @@
 
   function buildAccountPanel() {
     const panel = document.createElement('div');
-    panel.className = 'n85';
+    panel.className = 'account-sidebar-items';
     panel.innerHTML = `
-      <div class="n97">
+      <div class="account-sidebar-list">
         ${ACCOUNT_ITEMS.map(item => `
-          <a class="n37" href="${item.href}" data-discover="true" style="--item-color: ${item.color};">
-            <div class="n61">
+          <a class="account-sidebar-item" href="${item.href}" data-discover="true" style="--item-color: ${item.color};">
+            <div class="account-sidebar-item-icon">
               ${item.icon}
             </div>
-            <span class="n73">${item.label}</span>
-            <div class="n49">
+            <span class="account-sidebar-item-label">${item.label}</span>
+            <div class="account-sidebar-item-arrow">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg>
             </div>
           </a>
@@ -96,8 +96,8 @@
   }
 
   function openAccountSidebar() {
-    if (isAccountMode && sidebar.classList.contains('n119')) {
-      sidebar.classList.remove('n119');
+    if (isAccountMode && sidebar.classList.contains('sidebar--open')) {
+      sidebar.classList.remove('sidebar--open');
       restoreSearchSidebar();
       return;
     }
@@ -113,12 +113,12 @@
 
     sidebarTitle.textContent = 'Account';
     isAccountMode = true;
-    sidebar.classList.add('n119');
+    sidebar.classList.add('sidebar--open');
   }
 
   function closeSidebar() {
     restoreSearchSidebar();
-    sidebar.classList.remove('n119');
+    sidebar.classList.remove('sidebar--open');
   }
 
   function restoreBeforeSearchOpen() {

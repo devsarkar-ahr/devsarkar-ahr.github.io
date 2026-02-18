@@ -3,14 +3,14 @@
   // Create button HTML
   const button = document.createElement('a');
   button.id = 'random-game-btn';
-  button.className = 'n284';
-  button.innerHTML = '🎲 <span>Pick Random</span>';
+  button.className = 'random-game-button';
+  button.innerHTML = '🎲 <span>Random Game</span>';
   button.href = '#';
   
   // Add styles
   const style = document.createElement('style');
   style.textContent = `
-    .n284 {
+    .random-game-button {
       position: fixed;
       bottom: 2rem;
       left: 50%;
@@ -33,18 +33,18 @@
       transition: all 0.3s ease;
     }
 
-    .n284:hover {
+    .random-game-button:hover {
       transform: translateX(-50%) translateY(-4px);
       box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
       color: #000;
     }
 
-    .n284:active {
+    .random-game-button:active {
       transform: translateX(-50%) translateY(-2px);
     }
 
     @media (max-width: 768px) {
-      .n284 {
+      .random-game-button {
         padding: 0.65rem 1.25rem;
         font-size: 0.9rem;
         bottom: 1.5rem;

@@ -1,11 +1,9 @@
 (function() {
   'use strict';
 
-
-
   // Create and inject styles
   const styles = `
-    .n98 {
+    .random-picker-button {
       position: fixed;
       right: 2rem;
       top: 90%;
@@ -28,16 +26,16 @@
       animation: pulse-picker 2s infinite;
     }
 
-    .n98:hover {
+    .random-picker-button:hover {
       transform: translateY(-50%) scale(1.15);
       box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
     }
 
-    .n98:active {
+    .random-picker-button:active {
       transform: translateY(-50%) scale(0.95);
     }
 
-    .n99 {
+    .random-picker-tooltip {
       position: absolute;
       right: 80px;
       background: rgba(0, 0, 0, 0.9);
@@ -52,7 +50,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
-    .n98:hover .n99 {
+    .random-picker-button:hover .random-picker-tooltip {
       opacity: 1;
     }
 
@@ -66,20 +64,20 @@
     }
 
     @media (max-width: 768px) {
-      .n98 {
+      .random-picker-button {
         right: 1rem;
         width: 50px;
         height: 50px;
         font-size: 24px;
       }
 
-      .n99 {
+      .random-picker-tooltip {
         display: none;
       }
     }
 
     @media (max-width: 480px) {
-      .n98 {
+      .random-picker-button {
         display: none;
       }
     }
@@ -110,9 +108,12 @@
     }
 
     const button = document.createElement('button');
-    button.className = 'n98';
-    button.setAttribute('aria-label', 'Random Game');
-    button.textContent = '\uD83C\uDFB2 Pick Random';
+    button.className = 'random-picker-button';
+    button.setAttribute('aria-label', '');
+    button.innerHTML = `
+      🎲 Random Game
+       
+    `;
 
     button.addEventListener('click', function(e) {
       e.preventDefault();

@@ -1,8 +1,8 @@
-/**
- * Duckmath Search System - Simple Drawer Version
+﻿/**
+ * Quackprep Search System - Simple Drawer Version
  */
 (function () {
-    console.log('🔍 Duckmath Search (sidebar mode) loading...');
+    console.log('🔍 Quackprep Search (sidebar mode) loading...');
 
     let GAMES = [];
 
@@ -30,9 +30,9 @@
 
     // Build index from existing app icon cards on the page
     function buildIndexFromDOM() {
-        const nodes = Array.from(document.querySelectorAll('a.n312'));
+        const nodes = Array.from(document.querySelectorAll('a.app-icon-card'));
         return nodes.map(a => {
-            const titleEl = a.querySelector('.n251') || a.querySelector('img');
+            const titleEl = a.querySelector('.new-app-icon-title') || a.querySelector('img');
             const name = titleEl ? (titleEl.textContent || titleEl.getAttribute('alt') || '').trim() : (a.textContent || '').trim();
             const href = a.getAttribute('href') || '';
             const parts = href.split('/').filter(Boolean);
@@ -55,12 +55,12 @@
     }
 
     // Find the existing sidebar element that the site uses
-    const sidebar = document.querySelector('[data-testid="left-sidebar"], .n339');
-    const TRIGGER_SELECTORS = '[data-testid="search-icon-button"], .n273, [data-testid="search-icon"]';
+    const sidebar = document.querySelector('[data-testid="left-sidebar"], .sidebar');
+    const TRIGGER_SELECTORS = '[data-testid="search-icon-button"], .pill-section--search, [data-testid="search-icon"]';
 
     function openSidebar() {
         if (!sidebar) return;
-        sidebar.classList.add('n119');
+        sidebar.classList.add('sidebar--open');
         
         // Wait for GAMES to load, then render
         const doRender = () => {
@@ -68,7 +68,7 @@
                 GAMES = buildIndexFromDOM();
             }
             renderResults('', 'all', 'all');
-            const inp = sidebar.querySelector('[data-testid="search-input"], .n322, input[type=text]');
+            const inp = sidebar.querySelector('[data-testid="search-input"], .search-bar-input, input[type=text]');
             if (inp) setTimeout(() => inp.focus(), 80);
         };
         
@@ -81,7 +81,7 @@
 
     function closeSidebar() {
         if (!sidebar) return;
-        sidebar.classList.remove('n119');
+        sidebar.classList.remove('sidebar--open');
     }
 
      
@@ -107,7 +107,7 @@
 
     // Close button inside sidebar
     if (sidebar) {
-        const back = sidebar.querySelector('.n340');
+        const back = sidebar.querySelector('.sidebar-back-button');
         if (back) back.addEventListener('click', () => closeSidebar());
     }
 
@@ -128,9 +128,9 @@
     // Render results into the sidebar's apps list
     function renderResults(q, category = 'all', type = 'all') {
         if (!sidebar) return;
-        const listRoot = sidebar.querySelector('.n401');
-        const headerEl = sidebar.querySelector('.n390');
-        const containerEl = sidebar.querySelector('.n408');
+        const listRoot = sidebar.querySelector('.apps-list-list');
+        const headerEl = sidebar.querySelector('.apps-list-header');
+        const containerEl = sidebar.querySelector('.apps-list-scroll');
         if (!listRoot) return;
         
         const query = (q || '').toLowerCase();
@@ -180,7 +180,7 @@
             
             const a = document.createElement('a');
             a.href = g.href || ('/class/' + g.id + '/');
-            a.className = 'n312';
+            a.className = 'app-icon-card';
             a.setAttribute('data-testid', 'app_icon_' + (g.id || '').replace(/[^a-z0-9\-]/gi, ''));
             a.id = g.id || '';
             a.style.width = '100%';
@@ -191,13 +191,13 @@
             a.style.cursor = 'pointer';
             
             const container = document.createElement('div'); 
-            container.className = 'n323';
+            container.className = 'app-icon-container';
             container.style.width = '100%';
             container.style.height = '100%';
             container.style.position = 'relative';
             
             const imgWrap = document.createElement('div'); 
-            imgWrap.className = 'n346';
+            imgWrap.className = 'app-icon-image-wrapper';
             imgWrap.style.width = '100%';
             imgWrap.style.height = '100%';
             imgWrap.style.overflow = 'hidden';
@@ -207,7 +207,7 @@
                 img.loading = 'lazy'; 
                 img.src = g.thumb; 
                 img.alt = g.name; 
-                img.className = 'n335';
+                img.className = 'app-icon-image';
                 img.style.width = '100%';
                 img.style.height = '100%';
                 img.style.objectFit = 'cover';
@@ -216,7 +216,7 @@
             }
             
             const overlay = document.createElement('div'); 
-            overlay.className = 'n357';
+            overlay.className = 'app-icon-overlay';
             overlay.style.position = 'absolute';
             overlay.style.bottom = '0';
             overlay.style.left = '0';
@@ -229,7 +229,7 @@
             overlay.style.alignItems = 'flex-end';
             
             const h3 = document.createElement('h3'); 
-            h3.className = 'n251'; 
+            h3.className = 'new-app-icon-title'; 
             h3.textContent = g.name;
             h3.style.margin = '0';
             h3.style.fontSize = '11px';
@@ -254,9 +254,9 @@
 
     // Wire search input and filter buttons inside sidebar
     if (sidebar) {
-        const input = sidebar.querySelector('[data-testid="search-input"], .n322, input[type=text]');
-        const allCatBtns = Array.from(sidebar.querySelectorAll('.n435'));
-        const clearBtn = sidebar.querySelector('[onclick*="clear"], .n320, [data-testid="clear-filters"]');
+        const input = sidebar.querySelector('[data-testid="search-input"], .search-bar-input, input[type=text]');
+        const allCatBtns = Array.from(sidebar.querySelectorAll('.category-filter-btn'));
+        const clearBtn = sidebar.querySelector('[onclick*="clear"], .clear-filters, [data-testid="clear-filters"]');
         
         // Separate category and type buttons
         const catBtns = allCatBtns.filter(b => !/desktop|mobile|tablet/i.test((b.textContent || '').trim()));
@@ -333,5 +333,5 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSidebar(); });
 
     // Initial ready state
-    console.log('✅ Duckmath Search (sidebar mode) ready');
+    console.log('✅ Quackprep Search (sidebar mode) ready');
 })();

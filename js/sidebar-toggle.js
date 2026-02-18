@@ -4,9 +4,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const accountBtn = document.getElementById('account-btn');
     const searchBtn = document.getElementById('search-btn');
-    const sidebar = document.querySelector('.n339');
-    const sidebarTitle = document.querySelector('.n344');
-    const sidebarContent = document.querySelector('.n342');
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarTitle = document.querySelector('.sidebar-title');
+    const sidebarContent = document.querySelector('.sidebar-content');
     const searchSidebar = document.querySelector('[data-testid="search-sidebar"]');
     let currentSidebar = null;
 
@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function openSidebar(type) {
-        sidebar.classList.add('n255');
+        sidebar.classList.add('open');
         if (type === 'account') {
             sidebarTitle.textContent = 'Account';
-            sidebarContent.innerHTML = '<div class="n279">Account content here</div>';
+            sidebarContent.innerHTML = '<div class="account-sidebar">Account content here</div>';
             currentSidebar = 'account';
         } else if (type === 'search') {
             sidebarTitle.textContent = 'Search';
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function closeSidebar() {
-        sidebar.classList.remove('n255');
+        sidebar.classList.remove('open');
         currentSidebar = null;
     }
 

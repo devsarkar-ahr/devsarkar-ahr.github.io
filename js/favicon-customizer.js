@@ -1,7 +1,7 @@
 // Site Favicon & Title Customizer - Load this on all pages
 (function() {
-    const ICON_STORAGE_KEY = 'duckmath_custom_icon';
-    const TITLE_STORAGE_KEY = 'duckmath_custom_title';
+    const ICON_STORAGE_KEY = 'Quackprep_custom_icon';
+    const TITLE_STORAGE_KEY = 'Quackprep_custom_title';
     
     // Load saved settings
     function loadCustomSettings() {

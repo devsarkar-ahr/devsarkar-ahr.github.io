@@ -1,13 +1,13 @@
 // Lightweight scroll reveal + parallax for about page
 (function(){
   // Reveal using IntersectionObserver
-  const reveals = document.querySelectorAll('.n310');
+  const reveals = document.querySelectorAll('.reveal');
   const obsOptions = { threshold: 0.12 };
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
         if(entry.isIntersecting){
-          entry.target.classList.add('in-view'); // Fix: add 'in-view' class
+          entry.target.classList.add('in-view');
         }
       });
     }, obsOptions);
@@ -18,7 +18,7 @@
   }
 
   // Parallax effect for elements with .parallax and data-speed
-  const parallaxEls = Array.from(document.querySelectorAll('.n261')).filter(e=>e.dataset && e.dataset.speed);
+  const parallaxEls = Array.from(document.querySelectorAll('.parallax')).filter(e=>e.dataset && e.dataset.speed);
   function handleParallax(){
     const scTop = window.scrollY || window.pageYOffset;
     parallaxEls.forEach(el=>{

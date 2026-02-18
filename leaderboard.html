@@ -1,0 +1,1886 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.webp">
+    <meta name="author" content="DuckMath">
+    <meta name="publisher" content="Sarkar Games">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap"
+        rel="stylesheet preload prefetch" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style-new.css?v=2024061001" />
+    <link rel="stylesheet" href="/css/game.css?v=2024061001">
+    <link rel="stylesheet" href="/css/category.css?v=2024061001">
+    <link rel="stylesheet" href="/css/mark.css?v=2024061001">
+    <link rel="stylesheet" href="/css/footer.css?v=2024061001">
+    <style>
+        .n384 {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+            background: #ffffff4d;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            color: #333;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem 1.5rem;
+            height: 60px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 8px;
+            margin-top: .5rem;
+            box-shadow: 0 2px 8px #0000001a;
+            z-index: 1000
+        }
+
+        .n385 {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity .2s ease
+        }
+
+        .n385:hover {
+            opacity: .9
+        }
+
+        .n385 img {
+            width: 3.5rem;
+            margin-right: .5em
+        }
+
+        .n173 {
+            transition: transform .2s ease-in-out
+        }
+
+        .n173:hover {
+            transform: rotate(360deg)
+        }
+
+        @media(max-width: 768px) {
+            .n384 {
+                height: 48px;
+                padding: .25rem 1rem
+            }
+
+            .n385 {
+                font-size: 1.2em
+            }
+
+            .n385 img {
+                width: 2.5rem
+            }
+        }
+
+        .n193 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+            min-height: 100vh
+        }
+
+        .n194 {
+            margin-bottom: 30px
+        }
+
+        .n446 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px
+        }
+
+        .n442 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform .2s ease
+        }
+
+        .n442:hover {
+            transform: translateY(-2px)
+        }
+
+        .n445 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin: 0
+        }
+
+        .n440 {
+            border-radius: 8px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .1))
+        }
+
+        .n192 {
+            display: grid;
+            gap: 30px;
+            margin-bottom: 40px
+        }
+
+        .layout-column-two {
+            position: sticky;
+            top: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #0000000d;
+            overflow: hidden
+        }
+
+        .n447 {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #0000000d;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all .3s ease
+        }
+
+        .n447:hover {
+            box-shadow: 0 8px 25px #0000001a;
+            transform: translateY(-2px)
+        }
+
+        .n448 {
+            padding: 0
+        }
+
+        .n199 {
+            padding: 16px
+        }
+
+        .n198 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px 10px;
+            text-decoration: none;
+            color: inherit;
+            border-bottom: 1px solid #e2e8f0;
+            margin: -20px -20px 16px;
+            background: linear-gradient(135deg, #f8f9fa, #fff);
+            transition: all .3s ease
+        }
+
+        .n198:hover {
+            background: linear-gradient(135deg, #e9ecef, #f8f9fa);
+            transform: translateY(-1px)
+        }
+
+        .n204 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748
+        }
+
+        .n202 {
+            display: flex;
+            flex-direction: column;
+            gap: 6px
+        }
+
+        .n200 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            transition: all .3s ease;
+            position: relative;
+            overflow: hidden
+        }
+
+        .n200:hover,
+        .n200:focus {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .n200:hover {
+            background: #e9ecef;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px #0000001a;
+            cursor: pointer
+        }
+
+        .n200:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #6366f1;
+            opacity: 0;
+            transition: opacity .3s ease
+        }
+
+        .n200:hover:before {
+            opacity: 1
+        }
+
+        .n205 {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .n208 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: .8rem;
+            background: #6b7280;
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .2)
+        }
+
+        .n208.leaderboard-winner {
+            box-shadow: 0 4px 8px #0003;
+            animation: gentle-pulse 3s ease-in-out infinite
+        }
+
+        .n208.leaderboard-gold {
+            background: linear-gradient(135deg, gold, #ffed4e);
+            color: #1a1a1a;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            box-shadow: 0 4px 12px #ffd70066
+        }
+
+        .n208.leaderboard-silver {
+            background: linear-gradient(135deg, silver, #e8e8e8);
+            color: #1a1a1a;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            box-shadow: 0 4px 12px #c0c0c066
+        }
+
+        .n208.leaderboard-bronze {
+            background: linear-gradient(135deg, #cd7f32, #e6a85c);
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+            box-shadow: 0 4px 12px #cd7f3266
+        }
+
+        .cc-avatar-component {
+            position: relative;
+            transform: scale(.7);
+            margin: -10px
+        }
+
+        .leaderboard-index-avatar {
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 2px 8px #0000001a
+        }
+
+        .n206 {
+            display: flex;
+            flex-direction: column;
+            gap: 4px
+        }
+
+        .n207 {
+            font-weight: 600;
+            font-size: .9rem;
+            color: #2d3748
+        }
+
+        .n197 {
+            opacity: .8
+        }
+
+        .n203 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+            min-width: 60px;
+            text-align: right
+        }
+
+        .cc-section-footer-component {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: #6366f1;
+            font-weight: 600;
+            transition: all .3s ease;
+            margin: 20px -20px -20px
+        }
+
+        .cc-section-footer-component:hover {
+            background: #e9ecef;
+            color: #4f46e5
+        }
+
+        .cc-text-medium-bold {
+            font-weight: 600
+        }
+
+        .cc-icon-glyph {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .cc-icon-glyph svg {
+            fill: currentColor
+        }
+
+        .leaderboard-index-sidebar-item {
+            padding: 30px;
+            text-align: center
+        }
+
+        .leaderboard-index-sidebar-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: inherit
+        }
+
+        .leaderboard-index-sidebar-icon {
+            animation: gentle-bob 3s ease-in-out infinite
+        }
+
+        .champion-profile-icon {
+            animation: gentle-bob 3s ease-in-out infinite;
+            transform: scale(1.5);
+            margin: 10px
+        }
+
+        .champion-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            box-shadow: 0 4px 16px #ffd70066;
+            animation: gentle-bob 3s ease-in-out infinite;
+            -o-object-fit: cover;
+            object-fit: cover;
+            transition: all .3s ease
+        }
+
+        .champion-profile-icon {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .champion-profile-icon:hover .champion-avatar {
+            transform: scale(1.05);
+            border-color: #ffed4e;
+            box-shadow: 0 6px 20px #ffd70099
+        }
+
+        .champion-name-link {
+            text-decoration: none;
+            color: inherit;
+            transition: all .3s ease
+        }
+
+        .champion-name-link:hover,
+        .champion-name-link:focus {
+            text-decoration: none;
+            color: #2563eb;
+            transform: translateY(-1px)
+        }
+
+        .n280 svg {
+            opacity: .4 !important
+        }
+
+        .level-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2) !important;
+            color: #fff !important;
+            font-weight: 900 !important;
+            font-size: .75rem !important;
+            box-shadow: 0 3px 8px #667eea66 !important;
+            border: 2px solid #fff !important;
+            z-index: 20 !important
+        }
+
+        .champion-profile-icon .level-badge {
+            background: linear-gradient(135deg, gold, #ffed4e) !important;
+            color: #1a1a1a !important;
+            box-shadow: 0 4px 12px #ffd70099 !important
+        }
+
+        .leaderboard-index-sidebar-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            word-break: break-word
+        }
+
+        .leaderboard-index-sidebar-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6b7280;
+            text-align: center
+        }
+
+        .leaderboard-index-sidebar-title small {
+            display: block;
+            font-size: .8rem;
+            color: #9ca3af;
+            margin-top: 4px
+        }
+
+        @keyframes gentle-pulse {
+
+            0%,
+            to {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.05)
+            }
+        }
+
+        @keyframes gentle-bob {
+
+            0%,
+            to {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-5px)
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .n193 {
+                display: grid;
+                grid-template-columns: 1fr 300px;
+                gap: 40px;
+                align-items: start
+            }
+
+            .n194 {
+                grid-column: 1 / -1;
+                margin-bottom: 0
+            }
+
+            .n192 {
+                margin-bottom: 0
+            }
+        }
+
+        @media(max-width: 768px) {
+            .n193 {
+                padding: 15px
+            }
+
+            .n445 {
+                font-size: 2rem
+            }
+
+            .n198 {
+                padding: 10px 12px;
+                margin: -16px -16px 12px
+            }
+
+            .n204 {
+                font-size: 1.3rem
+            }
+
+            .n200 {
+                padding: 6px 10px
+            }
+
+            .n205 {
+                gap: 8px
+            }
+
+            .n208 {
+                min-width: 24px;
+                height: 24px;
+                font-size: .7rem
+            }
+
+            .n207 {
+                font-size: .8rem
+            }
+
+            .n203 {
+                font-size: .95rem;
+                min-width: 50px
+            }
+
+            .layout-column-two {
+                position: static
+            }
+
+            .leaderboard-index-sidebar-item {
+                padding: 20px
+            }
+
+            .leaderboard-index-sidebar-value {
+                font-size: 1.3rem
+            }
+        }
+
+        .app-high-scores-main-container {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px
+        }
+
+        .app-high-scores-main-container .n391.table {
+            border: none;
+            box-shadow: none;
+            margin: 0;
+            width: 100%
+        }
+
+        .app-high-scores-main-container .n391.table thead th {
+            background: #f8f9fa;
+            color: #2d3748;
+            font-weight: 600;
+            padding: 15px 12px;
+            font-size: 1rem;
+            border-bottom: 2px solid #e2e8f0
+        }
+
+        .app-high-scores-main-container .n391.table tbody tr {
+            border-bottom: 1px solid #e2e8f0
+        }
+
+        .app-high-scores-main-container .n391.table tbody tr:hover {
+            background: #f8f9fa
+        }
+
+        .app-high-scores-main-container .n391.table tbody td {
+            padding: 12px;
+            vertical-align: middle
+        }
+
+        .app-high-scores-main-container .n391.statistic {
+            margin: 0
+        }
+
+        .app-high-scores-main-container .n391.statistic .value {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+            color: #2d3748
+        }
+
+        .app-high-scores-main-container .n391.table tbody td a {
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin: -4px -8px;
+            transition: all .2s ease
+        }
+
+        .app-high-scores-main-container .n391.table tbody td a:hover {
+            background-color: #f1f5f9 !important;
+            transform: translateY(-1px)
+        }
+
+        .app-high-scores-main-container .n391.table tbody td a:focus {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px
+        }
+
+        @media(max-width: 768px) {
+            .app-high-scores-main-container .n391.table thead th {
+                padding: 10px 8px;
+                font-size: .9rem
+            }
+
+            .app-high-scores-main-container .n391.table tbody td {
+                padding: 10px 8px
+            }
+
+            .app-high-scores-main-container .n391.mini.image {
+                width: 24px !important;
+                height: 24px !important
+            }
+
+            .app-high-scores-main-container .n391.statistic .value {
+                font-size: 1rem !important
+            }
+
+            .app-high-scores-main-container .n391.table tbody td a {
+                padding: 6px 10px;
+                margin: -6px -10px;
+                min-height: 44px;
+                display: flex;
+                align-items: center
+            }
+        }
+
+        @media(max-width: 480px) {
+            .n442 {
+                flex-direction: column;
+                gap: 10px
+            }
+
+            .n445 {
+                font-size: 1.5rem
+            }
+
+            .n198 {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+                padding: 8px 10px
+            }
+
+            .n204 {
+                font-size: 1.2rem
+            }
+
+            .n200 {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                padding: 8px 10px
+            }
+
+            .n205 {
+                justify-content: center
+            }
+
+            .cc-avatar-component {
+                transform: scale(.5);
+                margin: -8px
+            }
+
+            .app-high-scores-main-container .n391.table {
+                font-size: .8rem
+            }
+
+            .app-high-scores-main-container .n391.table thead th {
+                padding: 6px 4px;
+                font-size: .7rem
+            }
+
+            .app-high-scores-main-container .n391.table tbody td {
+                padding: 6px 4px
+            }
+
+            .app-high-scores-main-container .n391.mini.image {
+                width: 16px !important;
+                height: 16px !important
+            }
+
+            .app-high-scores-main-container .n391.statistic .value {
+                font-size: .8rem !important
+            }
+
+            .app-high-scores-main-container .n391.table tbody tr {
+                display: block;
+                border-bottom: 2px solid #e2e8f0;
+                margin-bottom: 10px;
+                padding: 8px;
+                border-radius: 8px;
+                background: #f8f9fa
+            }
+
+            .app-high-scores-main-container .n391.table tbody td {
+                display: block;
+                padding: 4px 0;
+                border: none
+            }
+
+            .app-high-scores-main-container .n391.table tbody td:before {
+                content: attr(data-label) ": ";
+                font-weight: 600;
+                color: #2d3748
+            }
+
+            .app-high-scores-main-container .n391.table thead {
+                display: none
+            }
+        }
+    </style>
+    <title>Unblocked Games Leaderboard | Top Players & Scores - DuckMath</title>
+    <meta name="description"
+        content="Check the DuckMath leaderboard for unblocked games. See top players, high scores, and compete to climb the rankings and reach #1.">
+    <link rel="canonical" href="https://duckmath.fun/leaderboard" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HSTHCSNXTK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HSTHCSNXTK');
+</script>
+</head>
+
+
+<body
+    style="background: linear-gradient(135deg, #7fffd4 0%, #6ee7f7 100%); min-height: 100vh; margin: 0; font-family: 'Lato', Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px;">
+        <div class="n384" bis_skin_checked="1"><a href="/" style="color: rgb(0, 0, 0);">
+                <div class="n385" bis_skin_checked="1"><img src="/images/assest/duck-img-logo.webp"
+                        alt="logo" class="n173">Duckmath.fun</div>
+            </a></div>
+        <main class="n193">
+            <header class="n194">
+                <div class="n446" bis_skin_checked="1"><a href="/leaderboard"
+                        class="n442 n444"><img aria-hidden="true" alt="leaderboard"
+                            class="n440" height="40"
+                            src="https://www.chess.com/bundles/web/images/color-icons/leaderboard.svg" width="40">
+                        <h1 class="n445 n439">Leaderboard</h1>
+                    </a></div>
+            </header>
+            <div class="n192" bis_skin_checked="1">
+                <section class="n447 n441">
+                    <div class="n448 n199" bis_skin_checked="1">
+                        <div class="n198" bis_skin_checked="1"><img aria-hidden="true"
+                                alt="time champions" class="n440" height="48"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjAiIGZpbGw9IiM0Zjc5YTQiLz4KPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMTYiIGZpbGw9IndoaXRlIi8+CjxsaW5lIHgxPSIyNCIgeTE9IjEyIiB4Mj0iMjQiIHkyPSIyNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz4KPGxpbmUgeDE9IjI0IiB5MT0iMjQiIHgyPSIzMiIgeTI9IjI0IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4="
+                                width="48" style="cursor: pointer;"><span class="n204">Time
+                                Champions</span></div>
+                        <div class="n202" bis_skin_checked="1"><a href="/profile/sansiscool5817"
+                                class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 n210 n196">#1</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://img.freepik.com/premium-vector/cute-duck-celebrating-christmas_175152-224.jpg?w=1480"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">ShadowXPro</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                                <div class="n391 n165 n247 n191"
+                                                    style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                    bis_skin_checked="1"><i aria-hidden="true" class="n438 n176"
+                                                        style="margin-right: 6px;"></i>Ultimate Duck</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">129,840</span>
+                            </a><a href="/profile/0.qho2wg0afg" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 n210 n209">#2</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">NovaGamerYT</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">124,390</span>
+                            </a><a href="/profile/0.sdtmnwa580j" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 n210 n195">#3</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">DarkKnight77</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">118,275</span>
+                            </a><a href="/profile/0.fbvperdfzog" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 ">#4</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">PixelHunter</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">112,640</span>
+                            </a><a href="/profile/0.cefwb2g02mm" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 ">#5</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">GameMasterX</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">109,905</span>
+                            </a></div>
+                    </div>
+                </section>
+                <section class="n447 n441">
+                    <div class="n448 n199" bis_skin_checked="1">
+                        <div class="n198" bis_skin_checked="1"><img aria-hidden="true"
+                                alt="streaks" class="n440" height="48"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI0IDhMMjggMTZIMzZMMzAgMjRMMzQgMzJIMjZMMjIgMjRMMTggMzJIMTBMMTQgMjRMOCAxNkgxNkwyMCA4SDI0WiIgZmlsbD0iI2ZmNjYwMCIvPgo8L3N2Zz4="
+                                width="48" style="cursor: pointer;"><span class="n204">Streaks</span>
+                        </div>
+                        <div class="n202" bis_skin_checked="1"><a href="/profile/monkey56"
+                                class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 n210 n196">#1</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www.shutterstock.com/image-vector/christmas-card-baby-yoda-grogu-600nw-2394418753.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">FrostByte99</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                                <div class="n391 n404 n247 n191"
+                                                    style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                    bis_skin_checked="1"><i aria-hidden="true" class="n249 n176"
+                                                        style="margin-right: 6px;"></i>Gold Hoarder</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">9,780</span>
+                            </a><a href="/profile/samarillama" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 n210 n209">#2</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://schooleducation.org/wp-content/uploads/2025/12/d1641.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">TurboNinja</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">8,945</span>
+                            </a><a href="/profile/HWIXY" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 n210 n195">#3</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www.freevector.com/uploads/vector/preview/7742/FreeVector-Fat-Santa.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">ZeroLagAce</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                                <div class="n391 n165 n247 n191"
+                                                    style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                    bis_skin_checked="1"><i aria-hidden="true" class="n376 n176"
+                                                        style="margin-right: 6px;"></i>Santa's Helper</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">8,102</span>
+                            </a><a href="/profile/L0ST" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 ">#4</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://schooleducation.org/wp-content/uploads/2025/12/d1641.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">RexPlaysLive</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">7,460</span>
+                            </a><a href="/profile/SHERROD" class="n200">
+                                <div class="n205" bis_skin_checked="1"><span
+                                        class="n208 ">#5</span>
+                                    <div bis_skin_checked="1">
+                                        <style>
+                                            @keyframes shimmer {
+                                                0% {
+                                                    left: -100%;
+                                                }
+
+                                                100% {
+                                                    left: 100%;
+                                                }
+                                            }
+
+                                            .n280:hover .n409 {
+                                                transform: scale(1.05);
+                                            }
+
+                                            .n280:hover .level-badge {
+                                                transform: translateX(-50%) translateY(-2px);
+                                                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                            }
+                                        </style>
+                                        <div class="n280"
+                                            style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                            bis_skin_checked="1">
+                                            <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                bis_skin_checked="1">
+                                                <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                    bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                        alt="User avatar"
+                                                        src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                        style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="n206" bis_skin_checked="1">
+                                        <div class="n207" bis_skin_checked="1">QuantumFox</div>
+                                        <div class="n197" bis_skin_checked="1">
+                                            <div style="display: flex; flex-wrap: wrap; gap: 8px;" bis_skin_checked="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><span class="n203">6,988</span>
+                            </a></div>
+                    </div>
+                </section>
+                <div bis_skin_checked="1">
+                    <section class="n447 n441">
+                        <div class="n448 n199" bis_skin_checked="1">
+                            <div class="n198" bis_skin_checked="1"><img aria-hidden="true"
+                                    alt="dabloons this week" class="n440" height="48"
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ29sZEdyYWRpZW50IiBjeD0iNTAlIiBjeT0iMzAlIiByPSI3MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZGI4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZkNzAwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmYjMwMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iaW5uZXJHcmFkaWVudCIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZjVjYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmQ3MDAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSIyMiIgZmlsbD0idXJsKCNnb2xkR3JhZGllbnQpIiBzdHJva2U9IiNkZDk5MDAiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjE2IiBmaWxsPSJ1cmwoI2lubmVyR3JhZGllbnQpIiBzdHJva2U9IiNmZmIzMDAiIHN0cm9rZS13aWR0aD0iMSIvPgogIDx0ZXh0IHg9IjI0IiB5PSIzMiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzMzNjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+JDwvdGV4dD4KPC9zdmc+"
+                                    width="48" style="cursor: pointer;"><span class="n204">Dabloons
+                                    This Week</span></div>
+                            <div class="n202" bis_skin_checked="1"><a href="/profile/0.hgkecqqb9l"
+                                    class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 n210 n196">#1</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://i.pinimg.com/originals/51/9e/77/519e779362616ecd777613ee6ee5bad4.gif"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">CryptoDuckX</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1">
+                                                    <div class="n391 n404 n247 n191"
+                                                        style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                        bis_skin_checked="1"><i aria-hidden="true" class="n249 n176"
+                                                            style="margin-right: 6px;"></i>Gold Hoarder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">9,842,510</span>
+                                </a><a href="/profile/0.y8vdznz7w48" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 n210 n209">#2</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://i.pinimg.com/originals/51/9e/77/519e779362616ecd777613ee6ee5bad4.gif"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">LootLordTV</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1">
+                                                    <div class="n391 n404 n247 n191"
+                                                        style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                        bis_skin_checked="1"><i aria-hidden="true" class="n249 n176"
+                                                            style="margin-right: 6px;"></i>Gold Hoarder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">8,904,300</span>
+                                </a><a href="/profile/0.0gr0j6n8qf5b" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 n210 n195">#3</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">NeonRaider88</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1">
+                                                    <div class="n391 n404 n247 n191"
+                                                        style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                        bis_skin_checked="1"><i aria-hidden="true" class="n249 n176"
+                                                            style="margin-right: 6px;"></i>Gold Hoarder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">8,112,745</span>
+                                </a><a href="/profile/HWIXY" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 ">#4</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://www.freevector.com/uploads/vector/preview/7742/FreeVector-Fat-Santa.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">BlitzCrafter</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1">
+                                                    <div class="n391 n165 n247 n191"
+                                                        style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                        bis_skin_checked="1"><i aria-hidden="true" class="n376 n176"
+                                                            style="margin-right: 6px;"></i>Santa's Helper</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">7,540,290</span>
+                                </a><a href="/profile/0.krf4849vrum" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 ">#5</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://schooleducation.org/wp-content/uploads/2025/12/d1641.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">MythicMarauder</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1"></div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">7,118,660</span>
+                                </a></div>
+                        </div>
+                    </section>
+                </div>
+                <div bis_skin_checked="1">
+                    <section class="n447 n441">
+                        <div class="n448 n199" bis_skin_checked="1">
+                            <div class="n198" bis_skin_checked="1"><img aria-hidden="true"
+                                    alt="top classes" class="n440" height="48"
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOCIgZmlsbD0iIzY2NjZmZiIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjIwIiByPSI0IiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIzMiIgY3k9IjIwIiByPSI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxNCIgeT0iMjgiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+"
+                                    width="48" style="cursor: pointer;"><span class="n204">Top
+                                    Classes</span></div>
+                            <div class="n202" bis_skin_checked="1"><a href="/profile/0.f74m8385np"
+                                    class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 n210 n196">#1</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://schooleducation.org/wp-content/uploads/2025/12/d1641.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">ApexVortex</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1"></div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">1,425</span>
+                                </a><a href="/profile/JaCORN" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 n210 n209">#2</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://www.shutterstock.com/image-vector/christmas-card-baby-yoda-grogu-600nw-2394418753.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">EchoSniper</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1">
+                                                    <div class="n391 n165 n247 n191"
+                                                        style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                        bis_skin_checked="1"><i aria-hidden="true" class="n438 n176"
+                                                            style="margin-right: 6px;"></i>Ultimate Duck</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">1,301</span>
+                                </a><a href="/profile/TheoFrz" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 n210 n195">#3</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://schooleducation.org/wp-content/uploads/2025/12/d1641.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">RoguePixel</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1"></div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">1,198</span>
+                                </a><a href="/profile/karimZ" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 ">#4</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">TitanArcade</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1">
+                                                    <div class="n391 n291 n247 n191"
+                                                        style="font-weight: 600; font-size: 0.6em; margin-bottom: 4px;"
+                                                        bis_skin_checked="1"><i aria-hidden="true"
+                                                            class="n449 n189 n176"
+                                                            style="margin-right: 6px;"></i>Slayed the Dragon</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">1,044</span>
+                                </a><a href="/profile/yez" class="n200">
+                                    <div class="n205" bis_skin_checked="1"><span
+                                            class="n208 ">#5</span>
+                                        <div bis_skin_checked="1">
+                                            <style>
+                                                @keyframes shimmer {
+                                                    0% {
+                                                        left: -100%;
+                                                    }
+
+                                                    100% {
+                                                        left: 100%;
+                                                    }
+                                                }
+
+                                                .n280:hover .n409 {
+                                                    transform: scale(1.05);
+                                                }
+
+                                                .n280:hover .level-badge {
+                                                    transform: translateX(-50%) translateY(-2px);
+                                                    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                                                }
+                                            </style>
+                                            <div class="n280"
+                                                style="display: flex; flex-direction: column; align-items: center; position: relative; width: 60px; height: 60px; filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 12px);"
+                                                bis_skin_checked="1">
+                                                <div style="position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+                                                    bis_skin_checked="1">
+                                                    <div style="width: 51px; height: 51px; border-radius: 50%; overflow: hidden; border: 3px solid white; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset; position: relative; z-index: 1; background: linear-gradient(135deg, rgb(248, 249, 250) 0%, rgb(233, 236, 239) 100%);"
+                                                        bis_skin_checked="1"><img class="n409" loading="lazy"
+                                                            alt="User avatar"
+                                                            src="https://www2.minijuegosgratis.com/v3/games/thumbnails/250169_7_sq.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n206" bis_skin_checked="1">
+                                            <div class="n207" bis_skin_checked="1">LunarQuester</div>
+                                            <div class="n197" bis_skin_checked="1">
+                                                <div style="display: flex; flex-wrap: wrap; gap: 8px;"
+                                                    bis_skin_checked="1"></div>
+                                            </div>
+                                        </div>
+                                    </div><span class="n203">1,002</span>
+                                </a></div>
+                        </div>
+                    </section>
+                </div>
+        </main>
+
+        <footer class="n125">
+            <div class="n142">
+                <div class="n143">
+                    <div class="n148 n141">
+                        <div class="n419"><a href="/" data-discover="true"><img src="/favicon.webp"
+                                    alt="DuckMath" class="n147"></a>
+                            <div class="n422"><a href="/" data-discover="true">
+                                    <h2 class="n423">Duckmath</h2>
+                                </a>
+                                <p class="n420">Play Free Unblocked Games Online</p>
+                            </div>
+                        </div>
+                        <p class="n418">Enjoy and play 400+ online browser games on Duckmath.fun, updated
+                            every day, where you can earn rewards, compete on leaderboards, and enjoy smooth
+                            performance&mdash;even on a school &amp; office, Chromebook.</p>
+                        <div class="n370"><a href="#" class="n369" aria-label="TikTok" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="/images/assest/social/tiktok-outline-svgrepo-com.svg" alt="TikTok"></a><a
+                                href="#" class="n369" aria-label="The Duck Pond" target="_blank"><img
+                                    src="/images/assest/social/instagram-svgrepo-com.svg" alt="Instagram"></a><a
+                                href="#" class="n369" aria-label="YouTube" target="_blank"
+                                rel="noopener noreferrer"><img src="/images/assest/social/youtube-svgrepo-com.svg"
+                                    alt="YouTube"></a><a href="#" class="n369" aria-label="LinkedIn"
+                                target="_blank" rel="noopener noreferrer"><img
+                                    src="/images/assest/social/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></div>
+                    </div>
+                    <div class="n148">
+                        <h4 class="n337">Pages</h4>
+                        <ul class="n145">
+                            <li><a href="/" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/home-svgrepo-com.svg" alt="Home" width="24px"
+                                            height="24px"></span> Home</a></li>
+                            <li><a href="/about" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/about-filled-svgrepo-com.svg" alt="Home"
+                                            width="24px" height="24px"></span> About</a></li>
+                        </ul>
+                    </div>
+                    <div class="n148">
+                        <h4 class="n337">Features</h4>
+                        <ul class="n145">
+                            <li><a href="/leaderboard" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/trophy-svgrepo-com.svg" alt="Home" width="24px"
+                                            height="24px"></span> Leaderboard</a></li>
+                            <li><a href="/streak" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/fire-svgrepo-com.svg" alt="Home" width="24px"
+                                            height="24px"></span> Streak</a></li>
+                            <li><a href="/profile" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/profile-circle-svgrepo-com.svg" alt="Home"
+                                            width="24px" height="24px"></span> Profile</a></li>
+                            <li><a href="/settings" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/setting-2-svgrepo-com.svg" alt="Home"
+                                            width="24px" height="24px"></span> Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="n148">
+                        <h4 class="n337">Support</h4>
+                        <ul class="n145">
+                            <li><a href="/contact"><span class="n213"><img
+                                            src="/images/assest/footer/mail-svgrepo-com.svg" alt="Home" width="24px"
+                                            height="24px"></span> Contact Us</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer"><spanclass="n213"><img
+                                            src="/images/assest/footer/discord-svgrepo-com.svg" alt="Home" width="24px"
+                                            height="24px"></spanclass=> The Duck Pond</a></li>
+                        </ul>
+                    </div>
+                    <div class="n148">
+                        <h4 class="n337">Legal</h4>
+                        <ul class="n145">
+                            <li><a href="/terms" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/scroll-unfurled-svgrepo-com.svg" alt="Home"
+                                            width="24px" height="24px"></span> Terms of Service</a></li>
+                            <li><a href="/privacy" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/privacy-svgrepo-com.svg" alt="Home" width="24px"
+                                            height="24px"></span> Privacy Policy</a></li>
+                            <li><a href="/dmca" data-discover="true"><span class="n213"><img
+                                            src="/images/assest/footer/balance-1-svgrepo-com.svg" alt="Home"
+                                            width="24px" height="24px"></span> DMCA Takedown</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="n139">
+                    <div class="n144"></div>
+                    <div class="n140">
+                        <p class="n459">© 2026 Duckmath.Fun. All rights reserved.</p>
+                        <p class="n278"></p><a href="mailto:sarkargames.info@gmail.com"
+                            class="n457">sarkargames.info@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="n464 n461"></div>
+            <div class="n464 n462"></div>
+            <div class="n464 n463"></div>
+        </footer>
+    </div>
+    <script src="/js/favicon-customizer.js"></script>
+    <script src="/js/random-game-picker.js"></script>
+</body>
+
+</html>

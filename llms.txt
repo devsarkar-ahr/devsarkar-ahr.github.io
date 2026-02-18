@@ -1,0 +1,51 @@
+# llms.txt for https://pizzaedition.pro/
+# Last updated: 2025-10-18
+# Purpose: Control access for AI and LLM crawlers and describe site content
+
+# --- AI CRAWLER ACCESS RULES ---
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: *
+Disallow: /private/
+Disallow: /cgi-bin/
+Crawl-delay: 5
+
+# Primary Site Entry
+Homepage: https://pizzaedition.pro/
+
+# Sitemap (ALL pages are defined here)
+Sitemap: https://pizzaedition.pro/sitemap.xml
+
+# Core Informational Pages
+Allow: /about-us/
+Allow: /contact/
+Allow: /faqs/
+Allow: /privacy-policy/
+Allow: /terms-and-conditions/
+Allow: /dmca/
+
+# Category Pages
+Allow: /category/
+
+# Game Pages
+Allow: /game/
+
+
+# Content Usage Notes
+# - Content may be summarized and referenced by LLMs
+# - Do not reproduce full articles or game descriptions verbatim
+# - Attribution preferred when referencing PizzaEdition.pro

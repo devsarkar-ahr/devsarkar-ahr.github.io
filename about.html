@@ -1,0 +1,603 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.webp">
+    <meta name="author" content="DuckMath">
+    <meta name="publisher" content="Sarkar Games">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap"
+        rel="stylesheet preload prefetch" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style-new.css?v=2024061001" />
+    <link rel="stylesheet" href="/css/game.css?v=2024061001">
+    <link rel="stylesheet" href="/css/category.css?v=2024061001">
+    <link rel="stylesheet" href="/css/mark.css?v=2024061001">
+    <link rel="stylesheet" href="/css/footer.css?v=2024061001">
+    <style>
+                .n224 a:hover {
+                    text-decoration: none !important;
+                    color: #2b5a3b !important;
+                }
+        /* Icon Customizer Styles */
+        .n276 {
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        .n276:hover {
+            transform: translateY(-4px) scale(1.05);
+            border-color: rgba(255, 255, 255, 0.8) !important;
+            background: rgba(0, 0, 0, 0.3) !important;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .n276.selected {
+            border-color: #10B981 !important;
+            background: rgba(16, 185, 129, 0.2) !important;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
+        }
+
+        #add-custom-icon-btn:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
+        }
+
+        #add-custom-icon-btn:active {
+            transform: translateY(0);
+        }
+
+        #apply-icon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        #apply-icon-btn:active {
+            transform: translateY(0);
+        }
+
+        #custom-icon-input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.6) !important;
+            background: rgba(0, 0, 0, 0.3) !important;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+        }
+
+        #custom-icon-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .n277 {
+                grid-template-columns: 1fr !important;
+            }
+
+            #add-custom-icon-btn {
+                width: 100%;
+            }
+        }
+
+        .n384 {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+            background: #ffffff4d;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            color: #333;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem 1.5rem;
+            height: 60px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 8px;
+            margin-top: .5rem;
+            box-shadow: 0 2px 8px #0000001a;
+            z-index: 1000
+        }
+
+        .n385 {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity .2s ease
+        }
+
+        .n385:hover {
+            opacity: .9
+        }
+
+        .n385 img {
+            width: 3.5rem;
+            margin-right: .5em
+        }
+
+        .n173 {
+            transition: transform .2s ease-in-out
+        }
+
+        .n173:hover {
+            transform: rotate(360deg)
+        }
+
+        @media(max-width: 768px) {
+            .n384 {
+                height: 48px;
+                padding: .25rem 1rem
+            }
+
+            .n385 {
+                font-size: 1.2em
+            }
+
+            .n385 img {
+                width: 2.5rem
+            }
+        }
+    </style>
+    <style>
+        /* Page reveal & parallax helpers */
+        .n310 {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .8s ease, transform .8s cubic-bezier(.2, .9, .3, 1);
+        }
+
+        .n310.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .n261 {
+            will-change: transform;
+        }
+
+        /* small hero tweak */
+        .n246 h1 {
+            text-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+    <title>About DuckMath | Free Unblocked Games Platform</title>
+    <meta name="description"
+        content="Learn about DuckMath, a platform for free unblocked games. Discover our mission, features, and how we provide safe, fast, and fun browser gaming.">
+    <link rel="canonical" href="https://duckmath.fun/about" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HSTHCSNXTK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HSTHCSNXTK');
+</script>
+</head>
+
+<body aria-hidden="false" style="padding: 0px;">
+    <div id="root">
+        <div style="padding: 1rem 1rem 0px;" bis_skin_checked="1">
+            <div class="n384" bis_skin_checked="1"><a href="/" style="color: rgb(0, 0, 0);">
+                    <div class="n385" bis_skin_checked="1"><img src="/images/assest/duck-img-logo.webp"
+                            alt="logo" class="n173">Duckmath.fun</div>
+                </a></div>
+
+            <!-- Animated About Content -->
+            <main id="about-main" style="margin-top:1.25rem;">
+
+                <section class="n246 n310 n261" data-speed="0.2"
+                    style="padding:6rem 1rem 2.5rem 1rem; text-align:center; color:white; background: linear-gradient(180deg,#3e643d 0%, #2b5a3b 100%); border-radius:12px;">
+                    <h1 style="font-size:2.25rem; margin:0 0 .5rem 0; font-weight:900;">About DuckMath</h1>
+                    <p style="max-width:900px; margin:0 auto; opacity:0.95; font-size:1.05rem;">Free Unblocked Games for
+                        Students</p>
+                </section>
+
+                <section class="n224 n310"
+                    style="margin:2.5rem auto 0 auto; max-width:900px; background:#fff; color:#222; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.07); padding:2.5rem 1.5rem 2rem 1.5rem; font-size:1.08rem; line-height:1.7;">
+                    <h2 style="font-size:1.5rem; font-weight:800; color:#2b5a3b; margin-top:0;">What is DuckMath?</h2>
+                    <p><a href="https://duckmath.fun"><strong>DuckMath.fun</strong><strong>&nbsp; </strong></a><span
+                            style="font-weight: 400;">is a free unblocked games platform designed to provide students
+                            with quick and reliable access to browser-based games. The website offers a growing
+                            collection of games that work smoothly on school networks and Chromebooks, allowing users to
+                            play instantly without downloads or installations.</span></p>
+                    <p><span style="font-weight: 400;">Our library includes a wide range of categories such as,
+                        </span><a href="https://duckmath.fun/category/puzzle-games/"><strong>puzzle</strong></a><span
+                            style="font-weight: 400;">, </span><a
+                            href="https://duckmath.fun/category/sports-games/"><strong>sports</strong></a><span
+                            style="font-weight: 400;">, </span><a
+                            href="https://duckmath.fun/category/driving-games/"><strong>platformer</strong></a><span
+                            style="font-weight: 400;">, and </span><a
+                            href="https://duckmath.fun/category/casual-games/"><strong>casual games</strong></a><span
+                            style="font-weight: 400;">. Every game is selected for fast performance, simple controls,
+                            and compatibility with school devices.</span></p>
+                    <h2 style="font-size:1.3rem; font-weight:700; color:#2b5a3b; margin-top:2.2rem;">Our Mission</h2>
+                    <p>DuckMath was created with a simple goal: to make it easy for students to enjoy short breaks
+                        during the school day. We believe that quick moments of entertainment can help refresh focus and
+                        reduce mental fatigue between classes or study sessions.</p>
+                    <p>The platform is built to be lightweight, accessible, and easy to use so students can find and
+                        play games without unnecessary steps or technical issues.</p>
+                    <h2 style="font-size:1.3rem; font-weight:700; color:#2b5a3b; margin-top:2.2rem;">Why Choose
+                        DuckMath?</h2>
+                    <ul style="margin:0 0 1.5rem 1.2rem; padding:0; list-style:disc inside;">
+                        <li>Large Game Library – Hundreds of browser-based games across multiple categories</li>
+                        <li>School-Friendly Performance – Optimized for Chromebooks and low-end devices</li>
+                        <li>Instant Play – No downloads, extensions, or installations required</li>
+                        <li>Fast Loading – Lightweight pages for smooth performance on school networks</li>
+                        <li>Regular Updates – New games added to keep the library fresh</li>
+                        <li>Secure Access – Play directly in your browser without creating an account</li>
+                    </ul>
+                    <h2 style="font-size:1.3rem; font-weight:700; color:#2b5a3b; margin-top:2.2rem;">Features</h2>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Diverse Game
+                        Library</h3>
+                    <p><a href="http://duckmath.fun"><strong>DuckMath.fun</strong></a><strong>&nbsp; </strong><span style="font-weight: 400;">offers a wide variety of browser-based games across multiple categories, including&nbsp; </span><a href="https://duckmath.fun/category/puzzle-games/"><strong>puzzle</strong></a><span style="font-weight: 400;">, </span><a href="https://duckmath.fun/category/sports-games/"><strong>sports</strong></a><span style="font-weight: 400;">, </span><a href="https://duckmath.fun/category/driving-games/"><strong>platformer</strong></a><span style="font-weight: 400;">, and </span><a href="https://duckmath.fun/category/casual-games/"><strong>casual games</strong></a><span style="font-weight: 400;">. Each game is selected for smooth performance and quick loading so users can start playing instantly. The organized category system makes it easy to discover new games and find favorites without wasting time searching.</span></p>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Leaderboards</h3>
+                    <p>The leaderboard system allows players to track their performance and compete with others. High
+                        scores are recorded so users can measure their progress and aim for better results. This feature
+                        adds a competitive element and encourages players to improve their skills over time.</p>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Coin System</h3>
+                    <p>Players can earn coins by playing games, completing challenges, or achieving specific milestones.
+                        These coins can be used to unlock customization options, rewards, or special features within the
+                        platform. The coin system adds motivation and makes gameplay more engaging over time.</p>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Battle Pass</h3>
+                    <p>The seasonal Battle Pass provides structured challenges and exclusive rewards. Players can
+                        complete tasks, earn progress, and unlock unique items or achievements. This system keeps the
+                        experience fresh and gives users new goals to work toward during each season.</p>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Privacy Mode (Safe
+                        wording for Cloaking)</h3>
+                    <p>DuckMath includes optional privacy features that allow users to customize how the site appears
+                        during use. This helps create a more distraction-free experience and allows the platform to be
+                        used comfortably in shared or public environments.</p>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Active Community
+                    </h3>
+                    <p>DuckMath has an active community where users can stay updated on new games, request features, and
+                        share feedback. Community platforms also provide announcements, support, and a space for players
+                        to connect and stay informed about updates and improvements.</p>
+                    <h3 style="font-size:1.1rem; font-weight:700; color:#3e643d; margin-top:1.2rem;">Built for Students
+                    </h3>
+                    <p>DuckMath started as a small student-focused project and has grown into a platform used by
+                        thousands of players. The focus remains the same: fast access, reliable performance, and games
+                        that work well in school environments.</p>
+                    <p>We continuously improve the platform based on user feedback and regularly update our library to
+                        provide a better experience.</p>
+                    <h2 style="font-size:1.3rem; font-weight:700; color:#2b5a3b; margin-top:2.2rem;">Community</h2>
+                    <p>DuckMath has an active community where users can share feedback, request games, and stay updated
+                        on new releases and platform improvements.</p>
+                    <h2 style="font-size:1.3rem; font-weight:700; color:#2b5a3b; margin-top:2.2rem;">Start Playing</h2>
+                    <p><span style="font-weight: 400;">Explore hundreds of unblocked games and start playing instantly on </span><a href="https://duckmath.fun"><strong>DuckMath.fun</strong></a><span style="font-weight: 400;">. Whether you have a few minutes between classes or a short study break, DuckMath makes it easy to play anytime.</span></p>
+                </section>
+
+                <section class="n235"
+                    style="margin-top:2.5rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.25rem;">
+                    <article class="n133 n310"
+                        style="padding:1.5rem; background:#fff; border-radius:10px; box-shadow:0 12px 30px rgba(0,0,0,0.08);">
+                        <h3 style="margin:0 0 .5rem 0;">Play Anywhere</h3>
+                        <p style="margin:0; color:#444;">Instant play on any device — no installs, no signups.</p>
+                    </article>
+                    <article class="n133 n310"
+                        style="padding:1.5rem; background:#fff; border-radius:10px; box-shadow:0 12px 30px rgba(0,0,0,0.08);">
+                        <h3 style="margin:0 0 .5rem 0;">Curated Games</h3>
+                        <p style="margin:0; color:#444;">Hand-picked titles with smooth performance and safe content.
+                        </p>
+                    </article>
+                    <article class="n133 n310"
+                        style="padding:1.5rem; background:#fff; border-radius:10px; box-shadow:0 12px 30px rgba(0,0,0,0.08);">
+                        <h3 style="margin:0 0 .5rem 0;">Works on School Networks</h3>
+                        <p style="margin:0; color:#444;">Optimized for Chromebooks and restrictive networks.</p>
+                    </article>
+                </section>
+
+                <!-- Stats with animated counters -->
+                <section class="n257"
+                    style="margin-top:2.5rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; align-items:stretch;">
+                    <div class="n372 n310"
+                        style="padding:1.5rem; background:linear-gradient(180deg,#fff,#fbfbfb); border-radius:10px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.06);">
+                        <div style="font-size:2rem; font-weight:900; color:#2b5a3b;" data-count="550040">0</div>
+                        <div style="opacity:.8; margin-top:.5rem; font-weight:600;">players per month</div>
+                    </div>
+                    <div class="n372 n310"
+                        style="padding:1.5rem; background:linear-gradient(180deg,#fff,#fbfbfb); border-radius:10px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.06);">
+                        <div style="font-size:2rem; font-weight:900; color:#2b5a3b;" data-count="3500">0</div>
+                        <div style="opacity:.8; margin-top:.5rem; font-weight:600;">hours of play per day</div>
+                    </div>
+                    <div class="n372 n310"
+                        style="padding:1.5rem; background:linear-gradient(180deg,#fff,#fbfbfb); border-radius:10px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.06);">
+                        <div style="font-size:2rem; font-weight:900; color:#2b5a3b;" data-count="2">0</div>
+                        <div style="opacity:.8; margin-top:.5rem; font-weight:600;">game developers</div>
+                    </div>
+                </section>
+
+                <section class="n212 n310"
+                    style="margin-top:2.5rem; padding:2rem; border-radius:10px; background:linear-gradient(90deg,#fff,#f6f6f6); text-align:center;">
+                    <h3 style="margin:0 0 .5rem 0;">Want more features?</h3>
+                    <p style="margin:0 0 1rem 0; color:#333;">We’re always updating — check back often for new games and
+                        tools.</p>
+                    <a href="/"
+                        style="display:inline-block; padding:.75rem 1.25rem; background:#3e643d; color:white; border-radius:8px; text-decoration:none; font-weight:700;">Explore
+                        Games</a>
+                </section>
+            </main>
+
+            <footer class="n125">
+                <div class="n142">
+                    <div class="n143">
+                        <div class="n148 n141">
+                            <div class="n419"><a href="/" data-discover="true"><img src="/favicon.webp"
+                                        alt="DuckMath" class="n147"></a>
+                                <div class="n422"><a href="/" data-discover="true">
+                                        <h2 class="n423">Duckmath</h2>
+                                    </a>
+                                    <p class="n420">Play Free Unblocked Games Online</p>
+                                </div>
+                            </div>
+                            <p class="n418">DuckMath.fun offers 400+ free unblocked browser games with daily updates, player rewards, and global leaderboards. Play smoothly at school, office, Chromebook, or any device without downloads.</p>
+                            <div class="n370"><a href="#"
+                                            class="n369" aria-label="TikTok" target="_blank"
+                                            rel="noopener noreferrer"><img src="/images/assest/social/tiktok-outline-svgrepo-com.svg"
+                                                alt="TikTok"></a><a
+                                            href="#" class="n369"
+                                            aria-label="The Duck Pond" target="_blank"><img
+                                                src="/images/assest/social/instagram-svgrepo-com.svg" alt="Instagram"></a><a
+                                            href="#" class="n369"
+                                            aria-label="YouTube" target="_blank" rel="noopener noreferrer"><img
+                                                src="/images/assest/social/youtube-svgrepo-com.svg" alt="YouTube"></a><a
+                                            href="#" class="n369"
+                                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img
+                                                src="/images/assest/social/linkedin-svgrepo-com.svg" alt="LinkedIn"></a></div>
+                        </div>
+                        <div class="n148">
+                            <h4 class="n337">Pages</h4>
+                            <ul class="n145">
+                                <li><a href="/" data-discover="true"><span class="n213"><img src="/images/assest/footer/home-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Home</a></li><li><a href="/about" data-discover="true"><span class="n213"><img src="/images/assest/footer/about-filled-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> About</a></li>
+                            </ul>
+                        </div>
+                        <div class="n148">
+                            <h4 class="n337">Features</h4>
+                            <ul class="n145">
+                                <li><a href="/leaderboard" data-discover="true"><span class="n213"><img src="/images/assest/footer/trophy-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Leaderboard</a></li><li><a href="/streak" data-discover="true"><span class="n213"><img src="/images/assest/footer/fire-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Streak</a></li><li><a href="/profile" data-discover="true"><span class="n213"><img src="/images/assest/footer/profile-circle-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Profile</a></li><li><a href="/settings" data-discover="true"><span class="n213"><img src="/images/assest/footer/setting-2-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Settings</a></li>
+                            </ul>
+                        </div>
+                        <div class="n148">
+                            <h4 class="n337">Support</h4>
+                            <ul class="n145">
+                                <li><a href="/contact"><span class="n213"><img src="/images/assest/footer/mail-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Contact Us</a></li><li><a href="#" target="_blank" rel="noopener noreferrer"><spanclass="n213"><img src="/images/assest/footer/discord-svgrepo-com.svg" alt="Home" width="24px" height="24px"></spanclass=> The Duck Pond</a></li>
+                            </ul>
+                        </div>
+                        <div class="n148">
+                            <h4 class="n337">Legal</h4>
+                            <ul class="n145">
+                                <li><a href="/terms" data-discover="true"><span class="n213"><img src="/images/assest/footer/scroll-unfurled-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Terms of Service</a></li><li><a href="/privacy" data-discover="true"><span class="n213"><img src="/images/assest/footer/privacy-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> Privacy Policy</a></li><li><a href="/dmca" data-discover="true"><span class="n213"><img src="/images/assest/footer/balance-1-svgrepo-com.svg" alt="Home" width="24px" height="24px"></span> DMCA Takedown</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="n139">
+                        <div class="n144"></div>
+                        <div class="n140">
+                            <p class="n459">© 2026 Duckmath.Fun. All rights reserved.</p>
+                            <p class="n278"></p><a href="mailto:sarkargames.info@gmail.com"
+                                class="n457">sarkargames.info@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="n464 n461"></div>
+                <div class="n464 n462"></div>
+                <div class="n464 n463"></div>
+            </footer>
+        </div>
+        <section class="n124" aria-live="polite" aria-atomic="false" aria-relevant="additions text"
+            aria-label="Notifications Alt+T"></section>
+    </div>
+    <script src="/search-system.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/account-sidebar.js"></script>
+    <script src="/js/favicon-customizer.js"></script>
+    <script src="/js/about-animations.js"></script>
+    <script>
+        // Site Customizer (Icon & Title)
+        (function () {
+            const ICON_STORAGE_KEY = 'duckmath_custom_icon';
+            const TITLE_STORAGE_KEY = 'duckmath_custom_title';
+
+            let currentIconUrl = localStorage.getItem(ICON_STORAGE_KEY) || '/favicon.webp';
+            let currentTitle = localStorage.getItem(TITLE_STORAGE_KEY) || '';
+
+            // Initialize preview with saved icon
+            const previewImg = document.getElementById('icon-preview');
+            const statusMessage = document.getElementById('customizer-status-message');
+            const customTitleInput = document.getElementById('custom-title-input');
+            const clearTitleBtn = document.getElementById('clear-title-btn');
+
+            if (previewImg && currentIconUrl !== 'blank') {
+                previewImg.src = currentIconUrl;
+            } else if (currentIconUrl === 'blank' && previewImg) {
+                previewImg.style.display = 'none';
+            }
+
+            if (customTitleInput) {
+                customTitleInput.value = currentTitle;
+            }
+
+            // Apply saved settings on page load
+            applyCustomizations(currentIconUrl, currentTitle);
+
+            // Preset icon options
+            const presetOptions = document.querySelectorAll('.n276');
+            presetOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    const iconUrl = this.getAttribute('data-icon-url');
+                    currentIconUrl = iconUrl;
+
+                    // Update preview
+                    if (iconUrl === 'blank') {
+                        previewImg.style.display = 'none';
+                    } else {
+                        previewImg.style.display = 'block';
+                        previewImg.src = iconUrl;
+                    }
+
+                    // Visual feedback with selection highlighting
+                    presetOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+
+                    showStatus('✨ Icon selected! Click "Apply" to save and activate.', 'info');
+                });
+
+                // Check if this option matches the current saved icon
+                if (option.getAttribute('data-icon-url') === currentIconUrl) {
+                    option.classList.add('selected');
+                }
+            });
+
+            // Add custom icon button
+            const customInput = document.getElementById('custom-icon-input');
+            const addCustomBtn = document.getElementById('add-custom-icon-btn');
+
+            if (addCustomBtn) {
+                addCustomBtn.addEventListener('click', function () {
+                    const url = customInput.value.trim();
+
+                    if (!url) {
+                        showStatus('⚠️ Please enter a valid URL', 'error');
+                        return;
+                    }
+
+                    // Validate it's a URL
+                    try {
+                        new URL(url);
+                    } catch (e) {
+                        showStatus('❌ Invalid URL format. Please check and try again.', 'error');
+                        return;
+                    }
+
+                    currentIconUrl = url;
+
+                    // Update preview with test
+                    const testImg = new Image();
+                    testImg.onload = function () {
+                        previewImg.style.display = 'block';
+                        previewImg.src = url;
+                        customInput.value = '';
+
+                        // Remove selection from presets
+                        presetOptions.forEach(opt => opt.classList.remove('selected'));
+
+                        showStatus('✨ Custom icon loaded! Click "Apply" to save and activate.', 'success');
+                    };
+                    testImg.onerror = function () {
+                        showStatus('❌ Could not load image from URL. Please check the link.', 'error');
+                    };
+                    testImg.src = url;
+                });
+
+                // Allow Enter key to add custom icon
+                customInput.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        addCustomBtn.click();
+                    }
+                });
+            }
+
+            // Clear Title Button
+            if (clearTitleBtn && customTitleInput) {
+                clearTitleBtn.addEventListener('click', function () {
+                    customTitleInput.value = '';
+                    currentTitle = '';
+                    showStatus('✅ Title field cleared!', 'success');
+                });
+            }
+
+            // Apply customization button
+            const applyBtn = document.getElementById('apply-customization-btn');
+            if (applyBtn) {
+                applyBtn.addEventListener('click', function () {
+                    // Get title value
+                    currentTitle = customTitleInput ? customTitleInput.value.trim() : '';
+
+                    // Save to localStorage
+                    localStorage.setItem(ICON_STORAGE_KEY, currentIconUrl);
+                    if (currentTitle) {
+                        localStorage.setItem(TITLE_STORAGE_KEY, currentTitle);
+                    } else {
+                        localStorage.removeItem(TITLE_STORAGE_KEY);
+                    }
+
+                    // Apply customizations
+                    applyCustomizations(currentIconUrl, currentTitle);
+
+                    showStatus('✅ Changes applied! Refresh the page to see updates in browser tab.', 'success');
+
+                    // Disable button temporarily
+                    applyBtn.disabled = true;
+                    applyBtn.style.opacity = '0.6';
+                    applyBtn.style.cursor = 'not-allowed';
+                    setTimeout(() => {
+                        applyBtn.disabled = false;
+                        applyBtn.style.opacity = '1';
+                        applyBtn.style.cursor = 'pointer';
+                    }, 3000);
+                });
+            }
+
+            // Apply customizations
+            function applyCustomizations(iconUrl, title) {
+                // Apply favicon
+                if (iconUrl === 'blank') {
+                    const faviconLinks = document.querySelectorAll('link[rel*="icon"]');
+                    faviconLinks.forEach(link => {
+                        link.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"></svg>';
+                    });
+                } else {
+                    const faviconLinks = document.querySelectorAll('link[rel*="icon"]');
+                    faviconLinks.forEach(link => {
+                        link.href = iconUrl;
+                    });
+                }
+
+                // Apply title
+                if (title) {
+                    document.title = title;
+                }
+            }
+
+            // Show status message with better styling
+            function showStatus(message, type = 'info') {
+                if (statusMessage) {
+                    statusMessage.textContent = message;
+                    statusMessage.style.color = type === 'error' ? '#FF6B6B' : type === 'success' ? '#10B981' : '#FFD700';
+                    statusMessage.style.fontSize = '1rem';
+                    statusMessage.style.fontWeight = '600';
+
+                    if (type !== 'info') {
+                        setTimeout(() => {
+                            statusMessage.textContent = '';
+                        }, 5000);
+                    }
+                }
+            }
+
+            // Load initial customizations on page load
+            window.addEventListener('load', function () {
+                applyCustomizations(currentIconUrl, currentTitle);
+            });
+        })();
+    </script>
+    <script src="/js/favicon-customizer.js"></script>
+    <script src="/js/random-game-picker.js"></script>
+</body>
+
+</html>

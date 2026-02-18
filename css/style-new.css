@@ -1,0 +1,521 @@
+/*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
+@layer properties {
+    @supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+
+        *,
+        :before,
+        :after,
+        ::backdrop {
+            --tw-rotate-x: initial;
+            --tw-rotate-y: initial;
+            --tw-rotate-z: initial;
+            --tw-skew-x: initial;
+            --tw-skew-y: initial;
+            --tw-border-style: solid;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-color: initial;
+            --tw-shadow-alpha: 100%;
+            --tw-inset-shadow: 0 0 #0000;
+            --tw-inset-shadow-color: initial;
+            --tw-inset-shadow-alpha: 100%;
+            --tw-ring-color: initial;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-inset-ring-color: initial;
+            --tw-inset-ring-shadow: 0 0 #0000;
+            --tw-ring-inset: initial;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-outline-style: solid;
+            --tw-blur: initial;
+            --tw-brightness: initial;
+            --tw-contrast: initial;
+            --tw-grayscale: initial;
+            --tw-hue-rotate: initial;
+            --tw-invert: initial;
+            --tw-opacity: initial;
+            --tw-saturate: initial;
+            --tw-sepia: initial;
+            --tw-drop-shadow: initial;
+            --tw-drop-shadow-color: initial;
+            --tw-drop-shadow-alpha: 100%;
+            --tw-drop-shadow-size: initial
+        }
+    }
+}
+
+.n456 {
+    visibility: collapse
+}
+
+.n183 {
+    visibility: hidden
+}
+
+.n398 {
+    visibility: visible
+}
+
+.n371 {
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden
+}
+
+.n268 {
+    position: absolute
+}
+
+.n136 {
+    position: fixed
+}
+
+.n298 {
+    position: relative
+}
+
+.n373 {
+    position: static
+}
+
+.n374 {
+    position: sticky
+}
+
+.n451 {
+    grid-column: span 1/span 1
+}
+
+.n452 {
+    grid-column: span 2/span 2
+}
+
+.n453 {
+    grid-column: span 3/span 3
+}
+
+.n455 {
+    grid-column: span 6/span 6
+}
+
+.n315 {
+    grid-row: span 1/span 1
+}
+
+.n107 {
+    grid-row: span 2/span 2
+}
+
+.n316 {
+    grid-row: span 3/span 3
+}
+
+.n317 {
+    grid-row: span 4/span 4
+}
+
+.n258 {
+    width: 100%
+}
+
+.n250 {
+    margin-inline: auto
+}
+
+.n413 {
+    display: block
+}
+
+.n137 {
+    display: flex
+}
+
+.n166 {
+    display: grid
+}
+
+.n170 {
+    display: none
+}
+
+.n181 {
+    display: inline
+}
+
+.n182 {
+    display: inline-block
+}
+
+.n377 {
+    display: table
+}
+
+.n245 {
+    min-height: 100vh
+}
+
+.n399 {
+    width: 100%
+}
+
+.n167 {
+    flex-grow: 1
+}
+
+.n386 {
+    transform: var(--tw-rotate-x, )var(--tw-rotate-y, )var(--tw-rotate-z, )var(--tw-skew-x, )var(--tw-skew-y, )
+}
+
+.n386\! {
+    transform: var(--tw-rotate-x, )var(--tw-rotate-y, )var(--tw-rotate-z, )var(--tw-skew-x, )var(--tw-skew-y, ) !important
+}
+
+.n305 {
+    resize: both
+}
+
+.n215 {
+    list-style-type: decimal
+}
+
+.n216 {
+    list-style-type: disc
+}
+
+.n185 {
+    align-items: center
+}
+
+.n188 {
+    justify-content: center
+}
+
+.n414 {
+    border-style: var(--tw-border-style);
+    border-width: 1px
+}
+
+.n411 {
+    --tw-gradient-position: to bottom right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops))
+}
+
+.n380 {
+    text-align: center
+}
+
+.n433 {
+    text-transform: capitalize
+}
+
+.n227 {
+    text-transform: lowercase
+}
+
+.n394 {
+    text-transform: uppercase
+}
+
+.n184 {
+    font-style: italic
+}
+
+.n392 {
+    text-decoration-line: underline
+}
+
+.n393 {
+    text-underline-offset: 2px
+}
+
+.n311 {
+    --tw-ring-shadow: var(--tw-ring-inset, )0 0 0 calc(1px + var(--tw-ring-offset-width))var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+}
+
+.n256 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px
+}
+
+.n134 {
+    filter: var(--tw-blur, )var(--tw-brightness, )var(--tw-contrast, )var(--tw-grayscale, )var(--tw-hue-rotate, )var(--tw-invert, )var(--tw-saturate, )var(--tw-sepia, )var(--tw-drop-shadow, )
+}
+
+.n134\! {
+    filter: var(--tw-blur, )var(--tw-brightness, )var(--tw-contrast, )var(--tw-grayscale, )var(--tw-hue-rotate, )var(--tw-invert, )var(--tw-saturate, )var(--tw-sepia, )var(--tw-drop-shadow, ) !important
+}
+
+.n387 {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, ease);
+    transition-duration: var(--tw-duration, 0s)
+}
+
+.n387\! {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, backdrop-filter, display, content-visibility, overlay, pointer-events !important;
+    transition-timing-function: var(--tw-ease, ease) !important;
+    transition-duration: var(--tw-duration, 0s) !important
+}
+
+.n388 {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, ease);
+    transition-duration: var(--tw-duration, 0s)
+}
+
+@media(hover:hover) {
+    .n172\:underline:hover {
+        text-decoration-line: underline
+    }
+}
+
+@property --tw-rotate-x {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-rotate-y {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-rotate-z {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-skew-x {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-skew-y {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-border-style {
+    syntax: "*";
+    inherits: false;
+    initial-value: solid
+}
+
+@property --tw-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+}
+
+@property --tw-shadow-color {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+}
+
+@property --tw-inset-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+}
+
+@property --tw-inset-shadow-color {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-inset-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+}
+
+@property --tw-ring-color {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-ring-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+}
+
+@property --tw-inset-ring-color {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-inset-ring-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+}
+
+@property --tw-ring-inset {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-ring-offset-width {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0
+}
+
+@property --tw-ring-offset-color {
+    syntax: "*";
+    inherits: false;
+    initial-value: #fff
+}
+
+@property --tw-ring-offset-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+}
+
+@property --tw-outline-style {
+    syntax: "*";
+    inherits: false;
+    initial-value: solid
+}
+
+@property --tw-blur {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-brightness {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-contrast {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-grayscale {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-hue-rotate {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-invert {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-opacity {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-saturate {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-sepia {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-drop-shadow {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-drop-shadow-color {
+    syntax: "*";
+    inherits: false
+}
+
+@property --tw-drop-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+}
+
+@property --tw-drop-shadow-size {
+    syntax: "*";
+    inherits: false
+}
+
+:root {
+    --bg-primary: #1d2c13;
+    --bg-secondary: #2a3f1c;
+    --bg-tertiary: #364f25;
+    --accent-green-light: #6fbf73;
+    --accent-green: #4a9d4f;
+    --accent-green-dark: #3d7a41;
+    --emerald-light: #5dcea6;
+    --emerald: #3fb683;
+    --emerald-dark: #2d8f66;
+    --text-primary: #e8f5e9;
+    --text-secondary: #c8e6c9;
+    --text-muted: #a5d6a7;
+    --text-dark: #2e4a2d;
+    --border-color: #4a6b3f;
+    --border-light: #5d8151;
+    --hover-bg: #3d5330;
+    --active-bg: #4d6541;
+    --success: #66bb6a;
+    --warning: #ffa726;
+    --error: #ef5350;
+    --info: #42a5f5;
+    --gray-light: #d5e8d4;
+    --gray: #9caf9c;
+    --gray-dark: #5a6f5a;
+    --shadow-sm: rgba(13, 20, 9, .3);
+    --shadow-md: rgba(13, 20, 9, .5);
+    --shadow-lg: rgba(13, 20, 9, .7);
+    --overlay: rgba(29, 44, 19, .85)
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+body {
+    font-family: League Spartan, sans-serif;
+    background-color: #87dc83 !important;
+    background-image: url(/images/assest/bg-diamond.svg) !important;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover
+}
+
+a {
+    text-decoration: none;
+    color: #348fff;
+    transition: color .3s ease
+}
+
+a:visited {
+    color: #348fff
+}
+
+a:hover {
+    color: #fff
+}

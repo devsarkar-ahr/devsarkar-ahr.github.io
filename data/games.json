@@ -192,7 +192,7 @@
 { "id": "highway-racer-pro", "name": "Highway Racer Pro", "category": ["2d"], "type": "desktop", "href": "/class/highway-racer-pro/", "thumb": "/images/highway-racer-pro-small.webp" },
 { "id": "highway-traffic", "name": "Highway Traffic", "category": ["2d"], "type": "desktop", "href": "/class/highway-traffic/", "thumb": "/images/highway-traffic-small.webp" },
 { "id": "hill-climb-cars", "name": "Hill Climb Cars", "category": ["driving", "2d"], "type": "desktop", "href": "/class/hill-climb-cars/", "thumb": "/images/hill-climb-cars-small.webp" },
-{ "id": "hole-io", "name": "Hole Io", "category": ["io", "multiplayer", "2d"], "type": "desktop", "href": "/class/hole-io/", "thumb": "/images/hole-io-small.webp" },
+{ "id": "hole.io", "name": "Hole Io", "category": ["io", "multiplayer", "2d"], "type": "desktop", "href": "/class/hole.io/", "thumb": "/images/hole-io-small.webp" },
 { "id": "hollow-knight", "name": "Hollow Knight", "category": ["2d"], "type": "desktop", "href": "/class/hollow-knight/", "thumb": "/images/hollow-knight-small.webp" },
 { "id": "hook-wars", "name": "Hook Wars", "category": ["2d"], "type": "desktop", "href": "/class/hook-wars/", "thumb": "/images/hook-wars-small.webp" },
 { "id": "house-painter", "name": "House Painter", "category": ["2d"], "type": "desktop", "href": "/class/house-painter/", "thumb": "/images/house-painter-small.webp" },

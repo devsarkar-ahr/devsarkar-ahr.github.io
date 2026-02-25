@@ -1,61 +1,127 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
-<script/>
-<script/>
-<!--   created with Free Online Sitemap Generator www.xml-sitemaps.com   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://quackprep.pro/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://quackprep.pro/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/class/highway-traffic/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/99-nights-forest-survival/</loc>
+  <lastmod>2026-02-24T17:10:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/class/99-nights-in-the-forest/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/highway-traffic/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/class/eagle-craft/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/eagle-duckcraft/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/class/drift-boss/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/99-nights-in-the-forest/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/category/casual-games/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/eagle-craft/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/category/2d-games/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/basket-random-pro/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/category/3d-games/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/drift-boss/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/category/multiplayer-games/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/five-nights-at-freddys-web/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/category/driving-games/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://quackprep.pro/class/run-3/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://quackprep.pro/class/basket-random/</loc>
-<lastmod>2026-02-18T01:21:50+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://quackprep.pro/class/ovo-multiplayer/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://quackprep.pro/class/discus/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/class/axis-football-league/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/class/digital-museum/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/class/cool-game/</loc>
+  <lastmod>2026-02-24T17:10:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/class/interactive-buddy/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/class/learn-to-fly/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/category/casual-games/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/category/2d-games/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/category/3d-games/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/category/multiplayer-games/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/category/driving-games/</loc>
+  <lastmod>2026-02-24T17:10:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://quackprep.pro/class/basket-random/</loc>
+  <lastmod>2026-02-24T17:10:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
